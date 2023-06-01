@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhakait</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+
+<body>
+
+    <style>
+        /* courses */
+        .courses-section {}
+
+        .courses-section h4 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: #07324f;
+            font-size: 18px;
+        }
+
+        .course {
+            position: relative;
+        }
+
+        .course .course-link {
+            line-height: 30px;
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            color: #fff;
+            display: block;
+            background-color: #00aeef;
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            box-shadow: 0 8px 15px 0px rgba(61, 61, 61, 0.35);
+        }
+
+        .course .single-post-info {
+            padding-left: 0;
+        }
+
+        .courses-section .blog-meta {
+            margin-bottom: 0;
+        }
+
+        .course .blog-inner-content {
+            transition: all 0.6s ease-in-out
+        }
+
+        .course:hover .blog-inner-content {
+            top: -25px;
+        }
+
+        .facilities {
+            margin-top: 40px;
+        }
+
+        .facilities li {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            padding: 10px 0;
+        }
+
+        .facilities li i {
+            color: #00aeef;
+            font-size: 20px;
+            margin-right: 5px;
+        }
+
+        .facilities li b {
+            font-size: 15px;
+            line-height: 18px;
+            margin-bottom: 0;
+            color: #181b3a;
+            display: inline-block;
+            font-weight: 600;
+        }
+
+
+
+        .accordion .card {
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+
+
+        .accordion .card-header {
+            padding: .7rem 1rem;
+            margin-bottom: 0;
+            color: inherit;
+            background-color: rgb(255, 255, 255);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+        }
+
+        .accordion .card-header h5 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .accordion .card-body ul li {
+            font-weight: 300;
+        }
+
+
+        /***************** Blog *****************/
+        .blog {
+            position: relative;
+        }
+
+        .blog>a {
+            display: block;
+        }
+
+
+        .blog .single-post-info {
+            padding-left: 0;
+        }
+
+        .blog-section .blog-meta {
+            margin-bottom: 0;
+        }
+
+        .blog .blog-inner-content {
+            transition: all 0.6s ease-in-out
+        }
+
+        .blog:hover .blog-inner-content {
+            top: -15px;
+        }
+
+        .blog-single-post .blog .blog-inner-content {
+            padding: 10px 15px;
+        }
+
+        .blog .blog-inner-content {
+            padding: 15px;
+            box-shadow: 0 8px 28px 2px rgba(61, 61, 61, 0.07);
+            position: relative;
+            top: -20px;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .blog h4 {
+            margin-bottom: 0;
+        }
+
+        .addreess {
+            box-shadow: 0 8px 28px 2px rgba(61, 61, 61, 0.07);
+
+            border-radius: 8px;
+            background-color: #fff;
+            transition: all 0.4s ease;
+        }
+
+        .addreess_padd {
+            padding: 25px 25px;
+
+        }
+
+        .addreess:hover {
+            box-shadow: 0 8px 28px 2px rgba(61, 61, 61, 0.02);
+        }
+
+        .addreess h4 {}
+
+        .addreess p {
+            color: #33333387;
+            margin-bottom: 5px;
+        }
+        
+        
+        .course .blog-inner-content {
+    transition: all 0.6s ease-in-out;
+}
+        .blog-single-post .blog-inner-content {
+    padding: 25px 25px;
+}
+        .blog-inner-content {
+    padding: 15px;
+    box-shadow: 0 8px 28px 2px rgba(61, 61, 61, 0.07);
+    position: relative;
+    top: -35px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 0 15px;
+}
+        .course .single-post-info {
+    padding-left: 0;
+}
+        .single-post-info {
+    padding-left: 25px;
+    /* padding-bottom: 35px; */
+    overflow: hidden;
+}
+     .blog-inner-content a {
+    color: #00aeef;
+    font-weight: 600;
+}
+        .courses-section h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #07324f;
+    font-size: 18px;
+}
+        .courses-section .blog-meta {
+    margin-bottom: 0;
+}
+        .blog-single-post .blog-meta {
+    margin-bottom: 15px;
+}
+        .blog-meta {
+    margin-bottom: 10px;
+}
+        ul {
+    list-style: none;
+}
+        a{
+            text-decoration: none !important;
+        }
+        .blog-meta ul li {
+    font-size: 11px;
+    color: rgba(23, 31, 60, 0.55);
+    font-weight: 100;
+    position: relative;
+    display: inline-block;
+}
+        
+        
+        
+
+    </style>
+    <!-- ======= Header Section ======= -->
+    <div id="header_top" class="header-scrolled">
+        <div class="container">
+            <div class="row">
+                <div class="Nv-m col-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark  rounded">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/Screenshot_10.png" alt="" style="width: 150px;"></a>
+                        <div class="collapse navbar-collapse justify-content-left" id="navbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown menu-area">
+                                    <a class="nav-link dropdown-toggle" href="#" id="mega-one" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Products
+                                    </a>
+                                    <div class="dropdown-menu mega-area" aria-labelledby="mega-one">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-lg-4 line_right">
+                                                <a href="#" class="dropdown-item tab_sector">
+                                                    <span class="link_img">
+                                                        <img src="img/Group%20434@1X.png" alt=""></span>
+                                                    <div class="product-link-content">
+                                                        <span class="link-title">MODERN POS( Online Software)</span>
+                                                        <span class="link-sub">আপনার যদি কোন ব্যবসা প্রতিষ্ঠান /দোকান/শো রুম অথবা...</span>
+                                                    </div>
+
+
+
+                                                </a>
+                                                <a href="#" class="dropdown-item tab_sector">
+                                                    <span class="link_img">
+                                                        <img src="img/Group%20434@1X.png" alt=""></span>
+                                                    <div class="product-link-content">
+                                                        <span class="link-title">MODERN POS( Online Software)</span>
+                                                        <span class="link-sub">আপনার যদি কোন ব্যবসা প্রতিষ্ঠান /দোকান/শো রুম অথবা...</span>
+                                                    </div>
+
+
+
+                                                </a>
+                                                <a href="#" class="dropdown-item tab_sector">
+                                                    <span class="link_img">
+                                                        <img src="img/Group%20434@1X.png" alt=""></span>
+                                                    <div class="product-link-content">
+                                                        <span class="link-title">MODERN POS( Online Software)</span>
+                                                        <span class="link-sub">আপনার যদি কোন ব্যবসা প্রতিষ্ঠান /দোকান/শো রুম অথবা...</span>
+                                                    </div>
+
+
+
+                                                </a>
+                                                <a href="#" class="dropdown-item tab_sector">
+                                                    <span class="link_img">
+                                                        <img src="img/Group%20434@1X.png" alt=""></span>
+                                                    <div class="product-link-content">
+                                                        <span class="link-title">MODERN POS( Online Software)</span>
+                                                        <span class="link-sub">আপনার যদি কোন ব্যবসা প্রতিষ্ঠান /দোকান/শো রুম অথবা...</span>
+                                                    </div>
+
+
+
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-12 col-lg-4 line_right">
+
+                                                <a href="#" class="dropdown-item tab_sector">
+                                                    <span class="link_img">
+                                                        <img src="img/Dokan.svg" alt=""></span>
+                                                    <div class="product-link-content">
+                                                        <span class="link-title">Schools ,College Software</span>
+                                                        <span class="link-sub">ফ্রি স্কুল/কলেজ ম্যানেজমেন্ট সফটওয়্যার!!!</span>
+                                                    </div>
+
+
+
+                                                </a>
+                                                <a href="#" class="dropdown-item tab_sector">
+                                                    <span class="link_img">
+                                                        <img src="img/ERP.svg" alt=""></span>
+                                                    <div class="product-link-content">
+                                                        <span class="link-title">Hotel Management</span>
+                                                        <span class="link-sub">Hotel Management</span>
+                                                    </div>
+
+
+
+                                                </a>
+                                                <a href="#" class="dropdown-item tab_sector">
+                                                    <span class="link_img">
+                                                        <img src="img/wepos.svg" alt=""></span>
+                                                    <div class="product-link-content">
+                                                        <span class="link-title">x-Printer 58*60mm</span>
+                                                        <span class="link-sub">1. The new type of pos 58 thermal printer designed...</span>
+                                                    </div>
+
+
+
+                                                </a>
+                                                <a href="#" class="dropdown-item tab_sector">
+                                                    <span class="link_img">
+                                                        <img src="img/appsero-icon.svg" alt=""></span>
+                                                    <div class="product-link-content">
+                                                        <span class="link-title">Automatic Handheld Mobile POS</span>
+                                                        <span class="link-sub">Deep customized Safedroid O.S based on Android 8.1...</span>
+                                                    </div>
+
+
+
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-12 col-lg-4 line_right">
+
+                                                <a href="#" class="dropdown-item tab_sector">
+                                                    <span class="link_img">
+                                                        <img src="img/User-Frontend.svg" alt=""></span>
+                                                    <div class="product-link-content">
+                                                        <span class="link-title">Website Development</span>
+                                                        <span class="link-sub">Website Development</span>
+                                                    </div>
+
+
+
+                                                </a>
+                                                <a href="#" class="dropdown-item tab_sector">
+                                                    <span class="link_img">
+                                                        <img src="img/Project-Manager.svg" alt=""></span>
+                                                    <div class="product-link-content">
+                                                        <span class="link-title">MODERN POS( Online Software)</span>
+                                                        <span class="link-sub">আপনার যদি কোন ব্যবসা প্রতিষ্ঠান /দোকান/শো রুম অথবা...</span>
+                                                    </div>
+
+
+
+                                                </a>
+                                                <a href="#" class="dropdown-item tab_sector">
+                                                    <span class="link_img">
+                                                        <img src="img/wemail.svg" alt=""></span>
+                                                    <div class="product-link-content">
+                                                        <span class="link-title">MODERN POS( Online Software)</span>
+                                                        <span class="link-sub">আপনার যদি কোন ব্যবসা প্রতিষ্ঠান /দোকান/শো রুম অথবা...</span>
+                                                    </div>
+
+
+
+                                                </a>
+                                                <a href="products.html" class="dropdown-item tab_sector">
+                                                    <button type="button" class="btn btn-primary btn-lg all_item">View All Products <i class="fas fa-arrow-right" style="margin-left: 10px; transition: all .3s;"></i></button>
+
+
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="justify-content-right different_btn">
+                            <a href="#" class="btn btn-outline-su">
+                                <i class="fa fa-handshake-o"></i>
+                                Become Our Reseller
+                            </a>
+                            <a href="#" class="btn btn-outline">
+                                <i class="fas fa-headphones"></i>
+                                Support
+                            </a>
+
+
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======= Header Section End ======= -->
+
+
+    <div class="blog-single-post padd-30 courses-section">
+        <!-- container -->
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-md-12 mb-5 courses_heading">
+                    <header class="section-header mt-5 main_header">
+                        <h3>Our Courses</h3>
+                    </header>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="course">
+
+                        <a href="#"><img src="img/course1.png" alt="Course"></a>
+
+                        <a href="#" class="course-link">
+                            +
+                        </a>
+                        <div class="blog-inner-content">
+                            <div class="single-post-info">
+                                <a href="https://shikhbeshobai.com/course/8/details">
+                                    <h4>ফুল স্ট্যাক ওয়েব ডেভেলপমেন্ট - বনানী ব্রাঞ্চ</h4>
+                                </a>
+                                <div class="blog-meta">
+                                    <ul>
+                                        <li class="d-f">Course Type <span class="badge badge-success">Offline</span> </li>
+                                        <li class="d-f">Mentor <span class="badge badge-danger">ফয়সাল হামিদ হিমেল</span></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="course">
+
+                        <a href="#"><img src="img/course2.png" alt="Course"></a>
+
+                        <a href="#" class="course-link">
+                            +
+                        </a>
+                        <div class="blog-inner-content">
+                            <div class="single-post-info">
+                                <a href="#">
+                                    <h4>এডভান্স গ্রাফিক ডিজাইন</h4>
+                                </a>
+                                <div class="blog-meta">
+                                    <ul>
+                                        <li class="d-f">Course Type <span class="badge badge-primary">Offline</span> </li>
+                                        <li class="d-f">Mentor <span class="badge badge-danger">আব্দুল কাদের</span></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="course">
+
+                        <a href="#">
+                        <img src="img/course3.png" alt="Course"></a>
+
+                        <a href="#" class="course-link">
+                            +
+                        </a>
+                        <div class="blog-inner-content">
+                            <div class="single-post-info">
+                                <a href="#">
+                                    <h4>পিএইচপি এন্ড লারাভেল - অনলাইন</h4>
+                                </a>
+                                <div class="blog-meta">
+                                    <ul>
+                                        <li class="d-f">Course Type <span class="badge badge-primary">Online</span> </li>
+                                        <li class="d-f">Mentor <span class="badge badge-danger">ফয়সাল হামিদ হিমেল</span></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="course">
+
+                        <a href="#">
+                        <img src="img/course4.png" alt="Course"></a>
+
+                        <a href="#" class="course-link">
+                            +
+                        </a>
+                        <div class="blog-inner-content">
+                            <div class="single-post-info">
+                                <a href="#">
+                                    <h4>গ্রাফিক এন্ড ইউআই ডিজাইন -মিরপুর ব্রাঞ্চ</h4>
+                                </a>
+                                <div class="blog-meta">
+                                    <ul>
+                                        <li class="d-f">Course Type <span class="badge badge-success">Offline</span> </li>
+                                        <li class="d-f">Mentor <span class="badge badge-danger">নাইমুল হাসান</span></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="course">
+
+                        <a href="#"><img src="img/course5.png" alt="Course"></a>
+
+                        <a href="#" class="course-link">
+                            +
+                        </a>
+                        <div class="blog-inner-content">
+                            <div class="single-post-info">
+                                <a href="#">
+                                    <h4>রেসপন্সিভ ওয়েব ডিজাইন</h4>
+                                </a>
+                                <div class="blog-meta">
+                                    <ul>
+                                        <li class="d-f">Course Type <span class="badge badge-primary">Online</span> </li>
+                                        <li class="d-f">Mentor <span class="badge badge-danger">তৌফিকুল বারি তনয়</span></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="course">
+
+                        <a href="#"><img src="img/course6.png" alt="Course"></a>
+
+                        <a href="#" class="course-link">
+                            +
+                        </a>
+                        <div class="blog-inner-content">
+                            <div class="single-post-info">
+                                <a href="#">
+                                    <h4>ডিজিটাল মার্কেটিং অফলাইন</h4>
+                                </a>
+                                <div class="blog-meta">
+                                    <ul>
+                                        <li class="d-f">Course Type <span class="badge badge-success">Offline</span> </li>
+                                        <li class="d-f">Mentor <span class="badge badge-danger">তৌফিকুল আরাফাত</span></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="course">
+
+                        <a href="#">
+                        <img src="img/course7.png" alt="Course"></a>
+
+                        <a href="#" class="course-link">
+                            +
+                        </a>
+                        <div class="blog-inner-content">
+                            <div class="single-post-info">
+                                <a href="#">
+                                    <h4>ইউআই/ইউএক্স ডিজাইন - অনলাইন</h4>
+                                </a>
+                                <div class="blog-meta">
+                                    <ul>
+                                        <li class="d-f">Course Type <span class="badge badge-primary">Online</span> </li>
+                                        <li class="d-f">Mentor <span class="badge badge-danger">রাইয়ান সফওয়ান</span></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="course">
+
+                        <a href="#">
+                        <img src="img/course8.png" alt="Course"></a>
+
+                        <a href="#" class="course-link">
+                            +
+                        </a>
+                        <div class="blog-inner-content">
+                            <div class="single-post-info">
+                                <a href="#">
+                                    <h4>মোশন গ্রাফিক ডিজাইন অনলাইনচ</h4>
+                                </a>
+                                <div class="blog-meta">
+                                    <ul>
+                                        <li class="d-f">Course Type <span class="badge badge-success">Online</span> </li>
+                                        <li class="d-f">Mentor <span class="badge badge-danger">ইমরান হোসেন সজীব</span></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="course">
+
+                        <a href="#">
+                        <img src="img/course9.png" alt="Course"></a>
+
+                        <a href="#" class="course-link">
+                            +
+                        </a>
+                        <div class="blog-inner-content">
+                            <div class="single-post-info">
+                                <a href="#">
+                                    <h4>বেসিক কম্পিউটার অফলাইন - মিরপুর ব্রাঞ্চ</h4>
+                                </a>
+                                <div class="blog-meta">
+                                    <ul>
+                                        <li class="d-f">Course Type <span class="badge badge-success">Offline</span> </li>
+                                        <li class="d-f">Mentor <span class="badge badge-danger">ওমর ফারুক</span></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <!-- container -->
+    </div>
+
+    <!-- ======= Footer Section ======= -->
+    <footer class="footer-area pt-5 pb-1" style="background-color: #232D86">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 ">
+                    <img src="img/Screenshot_5.png" alt="" class="img-fluid w-50 mb-4">
+                    <p class="h5 py-3 subscribe_form"><b>Subscribe</b> our News letter</p>
+                    <div class="card p-2 w-75 shadow-sm mb-3">
+                        <div class="d-flex justify-content-between">
+                            <input type="text" class="border-0 w-50 pl-1 " placeholder="E-mail Address">
+                            <button class="btn btn-pr btn-sm">Send <i class="fa fa-send" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-list">
+                        <h4 class="font-weight-bold">Company</h4>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="" href="#">About Us</a></li>
+                            <li><a class="" href="#">Testimonials</a></li>
+                            <li><a class="" href="#">Team feature</a></li>
+                            <li><a class="" href="#">Stuff for developers</a></li>
+                            <li><a class="" href="#">Another one</a></li>
+                            <li><a class="" href="#">Last time</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-list">
+                        <h4 class="font-weight-bold">Resources</h4>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="" href="#">Cool stuff</a></li>
+                            <li><a class="" href="#">Random feature</a></li>
+                            <li><a class="" href="#">Team feature</a></li>
+                            <li><a class="" href="#">Stuff for developers</a></li>
+                            <li><a class="" href="#">Another one</a></li>
+                            <li><a class="" href="#">Last time</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 offset-lg-1">
+                    <div class="footer-list footer-list-icon">
+                        <h4 class="font-weight-bold">Products</h4>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="subscribe_form" href="#"><img src="img/Group%20434@1X.png" class="img-round" width="20" height="20"> MODERN POS( Online Software)</a></li>
+                            <li><a class="" href="#"><img src="img/NGO.jpeg" class="img-round" width="20" height="20"> NGO/ Micro Credit</a></li>
+                            <li><a class="" href="#"><img src="img/Hotel.jpeg" class="img-round" width="20" height="20"> Hotel Management</a></li>
+                            <li><a class="" href="#"><img src="img/ERP.svg" class="img-round" width="20" height="20"> HR-Payroll Management</a></li>
+                            <li><a class="" href="#"><img src="img/Domain.jpeg" class="img-round" width="20" height="20"> Domain</a></li>
+                            <li><a class="" href="#"><img src="img/Rongta.jpeg" class="img-round" width="20" height="20"> Rongta RP80 POS Printer</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer_details_here">
+
+                    <p class="pt-3 footer_title_last">
+                        <i class="far fa-copyright">
+
+                        </i> 2020, Dhaka IT.Ltd. All Rights Reserved.</p>
+
+
+                    <ul class="social-network social-circle list-unstyled" style="padding: 1rem;">
+                        <li><a href="https://www.facebook.com/dhakaitbd/" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="icoYoutube" title="Youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="icoGoogle" title="Gmail"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- ======= Footer Section End ======= -->
+    
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v8.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+
+    <!-- Your Chat Plugin code --
+    <div class="fb-customerchat" attribution=setup_tool page_id="197472517512007">
+    </div>
+-->
+</body>
+
+</html>
